@@ -1,0 +1,36 @@
+ALGORITHM chekpoint_algo
+VAR
+c:CHAR;
+nbrM : INTEGER :=0 ;
+nbrV : INTEGER :=0 ; 
+nbrC : INTEGER :=0 ;
+phrase : STRING ;
+BEGIN
+  Write( " ecrire une phrase")
+  IF (phrase.lenght<> '.') THEN
+    write ("error");   
+  ELSE
+         WHILE (c <> '.') DO
+           Read(c);
+              nbrC := nbrC +1;
+           IF (c = 'a' OR c='e' OR c='i' OR c='o' OR c='u' OR c='y') THEN
+               nbrV:= nbrV+1;
+            END_IF
+
+            IF (c=' ') THEN
+              nbrM := nbrM +1;
+            END_IF
+        
+        END_WHILE
+
+
+    END_IF
+
+
+
+
+
+END
+
+
+
